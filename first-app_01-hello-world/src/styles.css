@@ -1,23 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0;
-  padding: 0;
+:root{
+  --ivory:#f4f0e7;
+  --cream:#f4f0e7;
+  --warm-white:#eae6dc;
+  --forest:#12372f;
+  --ink:#17231f;
+  --muted:#6f7772;
+  --sage:#7f9188;
+  --terracotta:#b96240;
+  --champagne:#d8cbb7;
+  --sand:#d8cbb7;
+  --line:rgba(23,35,31,.15);
+  --sans:'Manrope',Arial,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --ease:cubic-bezier(.2,.7,.2,1)
 }
-
-body {
-  font-family: 'Be Vietnam Pro', sans-serif;
-}
-:root {
-  --primary-color: #090742;
-  --secondary-color: #8B89E6;
-  --accent-color: #e8e7fa;
-  --shadow-color: #E8E8E8;
-}
-
-button.primary {
-  padding: 10px;
-  border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: white;
-  border-radius: 8px;
-}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--ivory);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px}img{display:block;max-width:100%}::selection{background:var(--terracotta);color:#fff}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media(min-width:761px){.hero-copy{transform:translateY(20px)}.hero-copy h1{font-size:clamp(58px,5vw,76px)!important;line-height:.92!important}.hero-copy .lede{font-size:13px;margin:28px 0 38px}.hero-copy .city-chips{margin-top:22px}.hero-copy .saved-summary{margin-top:34px}}

@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="utf-8">
-  <title>Homes</title>
+  <title>MIRA Estate — Seçkin Yaşam Alanları</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <meta name="description" content="İstanbul, Ege ve Akdeniz'in özenle seçilmiş nitelikli yaşam alanları. MIRA Estate özel portföyü." />
+  <meta name="theme-color" content="#102d28" />
+  <script>
+    // Always start a hard refresh at the top instead of restoring an old section.
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    const navigationEntry = performance.getEntriesByType('navigation')[0];
+    if (navigationEntry && navigationEntry.type === 'reload') {
+      if (location.hash) {
+        history.replaceState(null, '', location.pathname + location.search);
+      }
+
+      scrollTo(0, 0);
+      addEventListener('load', () => scrollTo(0, 0), {once: true});
+    }
+  </script>
 </head>
 <body>
   <app-root></app-root>

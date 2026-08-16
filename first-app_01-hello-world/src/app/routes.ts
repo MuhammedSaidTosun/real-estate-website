@@ -5,12 +5,12 @@ const routeConfig: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Home page',
+    title: 'MIRA Estate — Seçkin Yaşam Alanları',
   },
   {
     path: 'details/:id',
     component: DetailsComponent,
-    title: 'Home details',
+    title: 'Mülk Detayı — MIRA Estate',
   },
 ];
 export default routeConfig;

@@ -1,6 +1,11 @@
 {
-  "dependencies": {
-    "@angular/core": "^19.2.0",
-    "tslib": "^2.8.1"
+  "name": "mira-estate-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MIRA Estate — a premium Angular real estate showcase.",
+  "scripts": {
+    "setup": "npm install --prefix first-app_01-hello-world",
+    "start": "npm start --prefix first-app_01-hello-world",
+    "build": "npm run build --prefix first-app_01-hello-world"
   }
 }

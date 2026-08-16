@@ -1,12 +1,14 @@
-/*
- *  Protractor support is deprecated in Angular.
- *  Protractor is used in this example for compatibility with Angular documentation tools.
- */
-import {bootstrapApplication, provideProtractorTestingSupport} from '@angular/platform-browser';
+import {bootstrapApplication} from '@angular/platform-browser';
 import {AppComponent} from './app/app.component';
-import {provideRouter} from '@angular/router';
+import {provideRouter, withInMemoryScrolling} from '@angular/router';
 import routeConfig from './app/routes';
+import {registerLocaleData} from '@angular/common';
+import localeTr from '@angular/common/locales/tr';
+
+registerLocaleData(localeTr);
 
 bootstrapApplication(AppComponent, {
-  providers: [provideProtractorTestingSupport(), provideRouter(routeConfig)],
+  providers: [
+    provideRouter(routeConfig, withInMemoryScrolling({scrollPositionRestoration: 'top', anchorScrolling: 'enabled'})),
+  ],
 }).catch((err) => console.error(err));
